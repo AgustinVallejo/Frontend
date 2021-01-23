@@ -1,0 +1,73 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.formulario{
+    width: 500px;
+    max-width: 100%;
+    margin: auto;
+    margin-top: 20px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    position: relative;
+}
+
+.formulario_titulo{
+    text-align: center;
+    margin-top: 0;
+    color: #555;
+}
+
+.formulario_input, .formulario_label, .formulario_submit{
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    font-size: 1.3em;
+}
+
+.formulario_input{
+    padding: 20px;
+    background: transparent;
+    border: 1px solid rgba(0,0,0,0.3);
+}
+
+.formulario_input:focus{
+    outline: 1px solid #444;
+}
+
+.formulario_input:focus + .formulario_label{
+    margin-top: -135px;
+}
+
+/* ESTE BLOQUE ME AHORRA TODO EL JAVASCRIPT */
+.formulario_input:required:valid + .formulario_label{
+    margin-top: -135px;
+}
+
+.formulario_label{
+    padding-left: 15px;
+    position: absolute;
+    margin-top: -85px;
+    z-index: -20;
+    color: #888;
+    transition: all 0.2s;
+}
+
+.formulario_submit{
+    background: #444;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+}
+
+/* Esto es para el JavaScript pero no funcionó :(
+.fijar{
+    margin-top: -135px;
+}
+*/
