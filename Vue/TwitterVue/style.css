@@ -1,0 +1,160 @@
+*{
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+}
+
+
+body{
+    font: bold 20px Arial;
+    margin: none;
+    background-color: rgb(6, 6, 24);
+}
+
+/*LEFT BAR*/
+.container{
+    width: 20%;
+    float: left;
+}
+
+.container ul{
+    line-height: 3;
+}
+
+.container a{
+    text-decoration: none;
+    color: #fff;
+    background-color: rgb(6, 6, 24);
+    padding: 15px;
+    border: 30px;
+    border-radius: 30px;
+}
+
+.container a:hover{
+    color:rgb(57, 176, 255);
+    background-color: rgb(22, 22, 71);
+}
+
+#current{
+    color:rgb(57, 176, 255);
+}
+
+#tweet_button1{
+    background-color:rgb(57, 176, 255);
+    color: white;
+    font-size: 15px;
+    padding: 15px 80px;
+    border: 30px;
+    border-radius: 20px;
+}
+
+#tweet_button1:hover{
+    background-color:rgb(48, 146, 211);
+}
+
+/*MIDDLE BAR*/
+.feed{
+    margin: 0;
+    left: 35%;
+    width: 450px;
+    position: relative;
+}
+
+#home{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border: 1px solid #333;
+}
+
+#home h1{
+    margin: 0;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+}
+
+.tweetbox{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-top: 45px;
+    border: 1px solid #333;
+    
+}
+
+.tweetbox input{
+    background-color: rgb(6, 6, 24);
+    padding: 20px;
+    font: normal 20px Arial;
+    color: grey;
+    border: none;
+}
+
+.tweetbox #tweet_button2{
+    right: 1px;
+    background-color:rgb(57, 176, 255);
+    color: white;
+    font: bolder 10px;
+    padding: 10px 40px;
+    border: 20px;
+    border-radius: 20px;
+    float: right;
+    margin: 20px;
+}
+
+.tweetbox #tweet_button2:hover{
+    background-color:rgb(48, 146, 211);
+}
+
+.separador{
+    position: absolute;
+    top: 120px;
+    height: 10px;
+    width: 100%;
+    background: #334;
+    border: 1px solid #333;
+}
+
+.tweets_container{
+    position: absolute;
+    width: 100%;
+    top: 130px;
+    color: white;
+}
+
+/* SINGLE TWEET */
+.tweet2{
+    margin: 0;
+    padding: 10px;
+    position: relative;
+    height: 120px;
+    list-style-type: none;
+}
+
+.tweet2 h2{
+    padding-bottom: 15px;;
+    color: white;
+    margin: 0;
+    font: bold 16px sans-serif;
+}
+
+.tweet2 h2 strong{
+    color: gray;
+    padding: 10px;
+    font: lighter 16px sans-serif;
+
+}
+
+.tweet2 li{
+    border: 1px solid #333;
+    left: 50px;
+    margin: 0px;
+    padding: 40px 20px;
+    font: normal 15px sans-serif;
+    color: white;
+}
